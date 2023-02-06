@@ -7,6 +7,7 @@ class Bmi {
     System.out.print("何人分の情報を入力しますか？");
     int n=scanner.nextInt();
     int maxAge=0;
+    int totalAge=0;
 
     for(int i=0; i<n; i++){
 
@@ -23,6 +24,7 @@ class Bmi {
     if(age>maxAge){
       maxAge=age;
     }
+    totalAge+=age;
     
 
     System.out.print("身長(m):");
@@ -35,7 +37,8 @@ class Bmi {
 
     }
     
-    System.out.println("最高年齢は"+maxAge+"です");
+    System.out.println("最高年齢は"+maxAge+"歳です");
+    System.out.println("平均年齢は"+totalAge/n+"歳です");
     
   }
 }
