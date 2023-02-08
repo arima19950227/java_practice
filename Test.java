@@ -12,5 +12,13 @@ class Test {
     this.height=height;
     this.weight=weight;
   }
+  
+  public String fullName(){
+    return this.firstName+this.lastName;
+  }
+  
+  public double bmi(){
+    return this.weight/this.height/this.height;
+  }
 
 }
