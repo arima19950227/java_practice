@@ -1,13 +1,16 @@
 class Test {
-  public String name;
-
-  Test(String name){
-    System.out.println("インスタンスが生成されました");
-    this.name=name;
-  }
+  public String firstName;
+  public String lastName;
+  public int age;
+  public double height;
+  public double weight;
   
-  public void hello(){
-    System.out.println("私の名前は"+this.name+"です");
+  Test(String firstName,String lastName,int age,double height,double weight){
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.age=age;
+    this.height=height;
+    this.weight=weight;
   }
 
 }
