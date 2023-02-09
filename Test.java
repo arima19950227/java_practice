@@ -20,5 +20,15 @@ class Test {
   public double bmi(){
     return this.weight/this.height/this.height;
   }
+  
+  public void printData(){
+    String fullName=this.fullName();
+    double bmi=this.bmi();
+    
+    System.out.println("私の名前は"+fullName+"です");
+    System.out.println("年齢は"+this.age+"歳です");
+    System.out.println("BMIは"+Math.round(bmi)+"です");
+    
+  }
 
 }
