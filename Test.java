@@ -42,7 +42,10 @@ class Test {
 
     //Math.round(引数)で四捨五入することができる
     System.out.println("BMIは"+Math.round(bmi)+"です");
+  }
 
+   public static void printCount(){
+    System.out.println("合計"+Test.count+"人です");
   }
 
 }

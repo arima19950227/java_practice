@@ -9,7 +9,7 @@ class Const {
   Test person3 = new Test("有馬", "遙清", 0, 0.5, 0.5);
   person3.printData();
 
- System.out.println("合計人数は"+Test.count+"人です");
+ Test.printCount();
 
   }
 }
