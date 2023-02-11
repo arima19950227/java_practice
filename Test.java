@@ -1,15 +1,15 @@
 class Test {
 
   //クラスフィールド↓,staticをつける
-  public static int count=0;
+  private static int count=0;
 
   //インスタンスフィールド↓
-  public String firstName;
-  public String middleName;
-  public String lastName;
-  public int age;
-  public double height;
-  public double weight;
+  private String firstName;
+  private String middleName;
+  private String lastName;
+  private int age;
+  private double height;
+  private double weight;
 
   Test(String firstName,String lastName,int age,double height,double weight){
 
