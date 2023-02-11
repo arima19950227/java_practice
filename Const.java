@@ -11,5 +11,8 @@ class Const {
 
  Test.printCount();
 
+ System.out.println("----------------");
+ System.out.println("有馬緑咲のミドルネームは"+person2.getMiddleName()+"です");
+
   }
 }

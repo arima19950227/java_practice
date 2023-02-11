@@ -28,6 +28,10 @@ class Test {
     this(firstName,lastName,age,height,weight);
     this.middleName=middleName;
   }
+  
+  public String getMiddleName(){
+    return this.middleName;
+  }
 
 
   public String fullName(){
