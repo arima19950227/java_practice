@@ -10,8 +10,9 @@ class Test {
   private int age;
   private double height;
   private double weight;
+  private String job;
 
-  Test(String firstName,String lastName,int age,double height,double weight){
+  Test(String firstName,String lastName,int age,double height,double weight,String job){
 
     //初期値0の値にインクリメントしていく
     Test.count++;
@@ -22,19 +23,28 @@ class Test {
     this.age=age;
     this.height=height;
     this.weight=weight;
+    this.job=job;
   }
 
-  Test(String firstName,String middleName,String lastName,int age,double height,double weight){
-    this(firstName,lastName,age,height,weight);
+  Test(String firstName,String middleName,String lastName,int age,double height,double weight,String job){
+    this(firstName,lastName,age,height,weight,job);
     this.middleName=middleName;
   }
-  
+
   public String getMiddleName(){
     return this.middleName;
   }
-  
+
   public void setMiddleName(String middleName){
     this.middleName=middleName;
+  }
+
+  public String getJob(){
+    return this.job;
+  }
+
+  public void setJob(String job){
+    this.job=job;
   }
 
 
@@ -61,6 +71,7 @@ class Test {
 
     //Math.round(引数)で四捨五入することができる
     System.out.println("BMIは"+Math.round(bmi)+"です");
+    System.out.println("職業は"+this.job+"です");
   }
 
    public static void printCount(){
