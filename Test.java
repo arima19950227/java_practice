@@ -32,6 +32,10 @@ class Test {
   public String getMiddleName(){
     return this.middleName;
   }
+  
+  public void setMiddleName(String middleName){
+    this.middleName=middleName;
+  }
 
 
   public String fullName(){

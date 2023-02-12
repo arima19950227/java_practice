@@ -8,11 +8,15 @@ class Const {
 
   Test person3 = new Test("有馬", "遙清", 0, 0.5, 0.5);
   person3.printData();
+  
+  person1.setMiddleName("ボブ");
 
  Test.printCount();
 
  System.out.println("----------------");
  System.out.println("有馬緑咲のミドルネームは"+person2.getMiddleName()+"です");
+ System.out.println("person1のミドルネームを"+person1.getMiddleName()+"に変更しました");
+ person1.printData();
 
   }
 }
