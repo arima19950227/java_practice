@@ -1,8 +1,7 @@
 class Main {
   public static void main(String[]args){
-    int x=19;
-    int y=23;
-    int z=x*y;
-    System.out.println(z);
+   Bicycle bicycle=new Bicycle("チャリンコ");
+   System.out.println("【自転車の名前】");
+   System.out.println("名前:"+bicycle.getName());
   }
 }
