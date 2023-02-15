@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[]args){
-   Bicycle bicycle=new Bicycle("チャリンコ");
+   Bicycle bicycle=new Bicycle("チャリンコ","金色");
    System.out.println("【自転車の名前】");
-   System.out.println("名前:"+bicycle.getName());
+   bicycle.printData();
   }
 }
